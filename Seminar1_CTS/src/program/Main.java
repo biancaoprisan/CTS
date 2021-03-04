@@ -23,8 +23,7 @@ public class Main {
 		
 		z.addAnimale(z1);
 		z.addAnimale(z2);
-		z.feedAllAnimals();
-		
+		z.feedAllAnimals();		
 
 	}
 
