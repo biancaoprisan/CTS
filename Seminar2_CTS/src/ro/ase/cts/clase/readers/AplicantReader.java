@@ -22,7 +22,7 @@ public abstract class AplicantReader {
 		int varsta = scanner.nextInt();
 		int punctaj = scanner.nextInt();
 		int nr = scanner.nextInt();
-		String[] vect = new String[5];
+		String[] vect = new String[nr]; // aici trebuie sa fie nr, nu un nr efectiv dat de noi pt a nu fi hardcodat
 		for (int i = 0; i < nr; i++)
 			vect[i] = scanner.next();
 		aplicant.setNume(nume);

@@ -5,8 +5,14 @@ import java.util.Arrays;
 public class Angajat extends Aplicant{
 	private String ocupatie;
 	private int salariu;
-	private static int sumaFinantare=30;
+	private static int sumaFinantare=10;
 	
+	public static int getSumaFinantare() {
+		return sumaFinantare;
+	}
+	public static void setSumaFinantare(int sumaFinantare) {
+		Angajat.sumaFinantare = sumaFinantare;
+	}
 	public String getOcupatie() {
 		return ocupatie;
 	}
@@ -32,9 +38,12 @@ public class Angajat extends Aplicant{
 	
 	@Override
 	public String toString() {
-		return "Angajat: Nume=" + nume + ", Prenume=" + prenume
-				+ ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte + ", DenumireProiect="
-				+ Arrays.toString(denumireProiect) + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
+		StringBuilder builder = new StringBuilder("Angajat: ");
+		
+		builder.append(super.toString());
+		builder.append("Ocupatie=" + ocupatie);
+		builder.append("salariu=" + salariu);
+		 return builder.toString();
 	}
 	@Override
 	public int getFinantare() {
