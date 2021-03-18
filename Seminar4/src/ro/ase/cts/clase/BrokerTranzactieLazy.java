@@ -48,7 +48,7 @@ public class BrokerTranzactieLazy {
 		return builder.toString();
 	}
 	
-	public static BrokerTranzactieLazy getInstance(String name, int vechime, int nrTranzactiiEfectuate) {
+	public static synchronized BrokerTranzactieLazy getInstance(String name, int vechime, int nrTranzactiiEfectuate) {
 		if(broker == null) { // daca nu am verifica, ar apela de fiecare data constructorul
 			broker = new BrokerTranzactieLazy(name, vechime, nrTranzactiiEfectuate);
 		}
