@@ -1,9 +1,9 @@
 package ro.acs.cts.SimpleFactory.program;
 
 import ro.acs.cts.SimpleFactory.clase.FactoryPersonal;
-import ro.acs.cts.SimpleFactory.clase.Medic;
-import ro.acs.cts.SimpleFactory.clase.PersonalSpital;
 import ro.acs.cts.SimpleFactory.clase.TipPersonal;
+
+
 
 public class Main {
 
@@ -14,8 +14,8 @@ public class Main {
 		
 		try {
 			FactoryPersonal factory= new FactoryPersonal();
-			PersonalSpital medic=  factory.getPersonal(TipPersonal.MEDIC, "Diana");
-			PersonalSpital asistent= factory.getPersonal(TipPersonal.ASISTENT, "Andrei");
+			ro.acs.cts.SimpleFactory.clase.PersonalSpital medic=  factory.getPersonal(TipPersonal.MEDIC, "Diana");
+			ro.acs.cts.SimpleFactory.clase.PersonalSpital asistent= factory.getPersonal(TipPersonal.ASISTENT, "Andrei");
 			System.out.println(medic.toString());
 			System.out.println(asistent.toString());
 		} catch (Exception e) {

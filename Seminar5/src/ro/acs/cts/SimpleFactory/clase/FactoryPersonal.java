@@ -1,5 +1,7 @@
 package ro.acs.cts.SimpleFactory.clase;
 
+
+
 public class FactoryPersonal {
 
 	public PersonalSpital getPersonal(TipPersonal tipPersonal, String nume) throws Exception {
