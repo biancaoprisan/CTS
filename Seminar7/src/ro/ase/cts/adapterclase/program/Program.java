@@ -4,7 +4,7 @@ import ro.ase.cts.adapterclase.clase.AdaptorCreditClase;
 import ro.ase.cts.adapterclase.clase.CreditAbstract;
 
 public class Program {
-
+ // Exercitiu 5 - Banca
 	
 	public static void afiseazaInformatiiCredit(CreditAbstract credit) {
 		credit.oferaCredit();
