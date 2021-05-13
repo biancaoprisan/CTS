@@ -4,7 +4,7 @@ public class Masa {
 
 	private int nrMasa;
 	private Stare stareMasa;
-	
+	//trebuie sa fie protected sau default ca sa nu poata fi apelat din main
 	protected void setStareMasa(Stare stareMasa) {
 		this.stareMasa=stareMasa;
 	}

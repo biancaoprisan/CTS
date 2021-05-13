@@ -1,5 +1,5 @@
 package ro.ase.cts.command.clase;
-
+//executant
 public class ContBancar {
 
 	private String detinator;

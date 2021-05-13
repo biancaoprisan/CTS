@@ -2,7 +2,7 @@ package ro.ase.cts.state.program;
 
 import ro.ase.cts.state.clase.Masa;
 import ro.ase.cts.state.clase.MasaLibera;
-
+//Resaurant - 13
 public class Program {
 
 	public static void main(String[] args) {

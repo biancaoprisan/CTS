@@ -14,7 +14,7 @@ public class ContCredit extends Cont {
 	   System.out.println("Ai platit cu contul de credit");
 	super.setSold(super.getSold()-suma);
    }
-   else {
+   else { //!!!
 	   if(super.getSuccesor()==null)
 	   {
 		   System.out.println("Nu se poate realiza plata");

@@ -1,5 +1,5 @@
 package ro.ase.cts.command.clase;
-
+//clasa abstracta in loc de interfata pentru a adauga si campul masa
 public abstract class Comanda {
 
 	private ContBancar cont;
