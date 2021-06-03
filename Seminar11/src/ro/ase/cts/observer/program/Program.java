@@ -4,7 +4,7 @@ import java.util.Observer;
 
 import ro.ase.cts.observer.clase.Client;
 import ro.ase.cts.observer.clase.ManagerSala;
-
+// sportiv - ex. 12 - abonarea la un eveniment
 public class Program {
 
 	public static void main(String[] args) {
