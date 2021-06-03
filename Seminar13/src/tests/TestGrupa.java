@@ -4,9 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import clase.Grupa;
 import clase.Student;
+import ro.ase.cts.categorie.GetPromovabilitateCategory;
+import ro.ase.cts.categorie.TesteNormale;
+import ro.ase.cts.categorie.TesteUrgente;
 
 public class TestGrupa {
 	
@@ -52,12 +56,14 @@ public class TestGrupa {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
+	@Category(TesteNormale.class)
 	public void testConstructorTrebuieSaArunceExceptieLimSup() {
 		Grupa grupa= new Grupa(1400);
 		assertEquals(1400, grupa.getNrGrupa());
 	}
 	
 	@Test(timeout =500)
+	@Category(TesteUrgente.class)
 	public void testConstructorPerformant() {
 		Grupa grupa= new Grupa(1050);
 		
@@ -69,6 +75,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category(GetPromovabilitateCategory.class)
 	public void testPromovabilitateRight() {
 		Grupa grupa = new Grupa(1083);
 		for (int i =0;i<3;i++) {
@@ -87,6 +94,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category(GetPromovabilitateCategory.class)
 	public void testPromovabilitateLowerBoundery() {
 		Grupa grupa = new Grupa(1083);
 		for (int i =0;i<3;i++) {
@@ -99,6 +107,7 @@ public class TestGrupa {
 	}
 	
 	@Test
+	@Category(GetPromovabilitateCategory.class)
 	public void testPromovabilitateUpperBoundery() {
 		Grupa grupa= new Grupa(1083);
 		for(int i =0; i <7;i++) {
@@ -112,6 +121,7 @@ public class TestGrupa {
 	}
 	
 	@Test( expected = IndexOutOfBoundsException.class)
+	@Category(GetPromovabilitateCategory.class)
 	public void testPromovabilitateErrorCondition() {
 		
 		Grupa grupa= new Grupa(1083);
@@ -119,6 +129,7 @@ public class TestGrupa {
 	}
 	
 	@Test(timeout=500) //500 milisecunde
+	@Category(GetPromovabilitateCategory.class)
 	public void testPromovabilitatePerformance()
 	{
 		Grupa grupa = new Grupa(1083);
