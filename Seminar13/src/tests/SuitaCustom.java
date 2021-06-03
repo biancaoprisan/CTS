@@ -16,5 +16,6 @@ import ro.ase.cts.categorie.TesteUrgente;
 @IncludeCategory(GetPromovabilitateCategory.class)
 @ExcludeCategory({TesteUrgente.class, TesteNormale.class})
 public class SuitaCustom {
+	
 
 }
